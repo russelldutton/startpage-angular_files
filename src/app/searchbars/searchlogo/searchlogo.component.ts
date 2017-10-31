@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'searchlogo',
@@ -7,13 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchlogoComponent implements OnInit {
 
-  logos:string[] = [
-    '../../../assets/google_logo.png',
-    '../../../assets/youtube.png',
-    '../../../assets/imdb.png'
-  ];
+  
 
-  selectedLogo: string = this.logos[0];
+  @Input() selectedLogo;
   // selectedLogo: number = 0;
 
   constructor() { }

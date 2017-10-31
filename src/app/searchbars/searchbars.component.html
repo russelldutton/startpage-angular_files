@@ -1,24 +1,16 @@
 <div class="row">
   <div class="col-md-3 image-preview">
-    <searchlogo></searchlogo>
+    <searchlogo [selectedLogo]="selectedLogo"></searchlogo>
   </div>
   <div class="col-md-9">
     <div class="container-fluid card search-bar">
-      <form method="get" action="http://www.google.co.za/search">
-        <div class="input-group stylish-input-group input-append search-bar">
-          <input type="text" name="q" class="form-control search-bar" autocomplete="off" autofocus="" placeholder="Google Search">
+      <div *ngFor="let bar of bars; let i=index" >
+          <form method="get" [action]="bar.link">
+            <div class="input-group search-bar">
+              <input type="text" name="q" class="form-control search-bar" autocomplete="off" [attr.autofocus]="bar.name == 'Google Search'" placeholder="{{bar.name}}" on-focus="onFocus(i)" on-blur="onBlur()" (mouseenter)="onHover(i)">
+            </div>
+          </form>
         </div>
-      </form>
-      <form method="get" action="http://www.youtube.com/results">
-        <div class="input-group stylish-input-group input-append search-bar">
-          <input type="text" name="q" class="form-control search-bar" autocomplete="off" placeholder="Youtube Search">
-        </div>
-      </form>
-      <form method="get" action="http://www.imdb.com/find">
-        <div class="input-group stylish-input-group input-append search-bar">
-          <input type="text" name="q" class="form-control search-bar" autocomplete="off" placeholder="IMDB Search">
-        </div>
-      </form>
     </div>
   </div>
 </div>
