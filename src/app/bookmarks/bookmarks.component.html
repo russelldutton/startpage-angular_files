@@ -1,18 +1,13 @@
-<div class="row">
-  <div class="col-md-3">
-    <div class="card">
-      <div class="card-body">
-        <span class="card-title d-flex justify-content-center">
-          <i class="fa fa-reddit fa-2x"></i>
-        </span>
-        <hr>
-        <ul class="card-body">
-          <li><a href="http://www.reddit.com/r/Dota2">/r/Dota2</a></li>
-          <li><a href="http://www.reddit.com/r/Dota2">/r/unixporn</a></li>
-          <li><a href="http://www.reddit.com/r/Dota2">/r/startpages</a></li>
-          <li><a href="http://www.reddit.com/r/Dota2">/r/archlinux</a></li>
-        </ul>
-      </div>
+<div class="card-columns">
+  <div class="card"*ngFor="let mark of bookmarks">
+    <div class="card-body">
+      <span>
+        <h5>{{mark.name}}</h5>
+      </span>
+      <hr>
+      <ul class="card-body">
+        <li *ngFor="let item of mark.links"><a [href]="item.link">{{item.name}}</a></li>
+      </ul>
     </div>
   </div>
 </div>
