@@ -1,0 +1,35 @@
+div.card-body {
+  padding: 10px;
+}
+
+div.card {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+}
+
+div.card:hover {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+hr {
+  margin: 8px;
+}
+
+span {
+  margin-bottom: 0;
+}
+
+li a {
+  color: #444;
+}
+
+ul {
+  color: #444;
+  list-style: none;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
