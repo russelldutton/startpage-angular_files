@@ -7,20 +7,20 @@ import { SearchlogoComponent } from './searchlogo/searchlogo.component';
   styleUrls: ['./searchbars.component.css']
 })
 export class SearchbarsComponent implements OnInit {
-  logos = [
-    {
-      src: '/assets/google_logo.png',
-      link: 'http://www.google.co.za'
-    },
-    {
-      src: '/assets/youtube.png',
-      link: 'http://www.youtube.co.za'
-    },
-    {
-      src: '/assets/imdb.png',
-      link: 'http://www.imdb.com'
-    }
-  ];
+  // logos = [
+  //   {
+  //     src: '/assets/google_logo.png',
+  //     link: 'http://www.google.co.za'
+  //   },
+  //   {
+  //     src: '/assets/youtube.png',
+  //     link: 'http://www.youtube.co.za'
+  //   },
+  //   {
+  //     src: '/assets/imdb.png',
+  //     link: 'http://www.imdb.com'
+  //   }
+  // ];
 
   bars = [
     {
@@ -37,7 +37,7 @@ export class SearchbarsComponent implements OnInit {
     }
   ];
 
-  selectedLogo = this.logos[0];
+  selectedLogo: number = 0;
   focus: boolean = true;
 
   constructor() { }
@@ -47,8 +47,7 @@ export class SearchbarsComponent implements OnInit {
 
   onFocus(index: number): void {
     this.focus = true;
-    this.selectedLogo = this.logos[index];
-    console.log(index);
+    this.selectedLogo = index;
   }
   
   onBlur(): void {
@@ -57,7 +56,7 @@ export class SearchbarsComponent implements OnInit {
 
   onHover(index: number) {
     if ( !this.focus ) {
-      this.selectedLogo = this.logos[index];
+      this.selectedLogo = index;
     }
   }
 

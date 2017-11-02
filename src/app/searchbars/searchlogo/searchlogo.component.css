@@ -11,13 +11,18 @@ div.card:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* img {
-  border: solid;
-  border-width: 1pt;
-  border-color: #666;
-  background-color: rgba(200, 200, 200, 0.3);
-} */
- /* i {
-   width: 150px;
-   height: 150px;
- } */
+img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  position: absolute;
+}
+
+img.active {
+  opacity: 1;
+  /* visibility: visible; */
+}
+
+img.inactive {
+  opacity: 0;
+  /* visibility: hidden; */
+}

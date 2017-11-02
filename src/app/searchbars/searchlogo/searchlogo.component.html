@@ -1,3 +1,7 @@
-<div class="card">
+<!-- <div class="card">
   <a href="{{selectedLogo.link}}"><img class="card-img-top" [src]="selectedLogo.src" alt="searchLogo here" width="160" height="160"></a>
+</div> -->
+
+<div class="card">
+  <a *ngFor="let img of logos; let i=index" href="{{img.link}}"><img class="card-img-top" src="{{img.src}}" alt="Search Logo" width="160" height="160" [ngClass]="{'active': selectedLogo == i, 'inactive': selectedLogo != i}" [style.z-index]="i == 0 ? 0 : i"></a>
 </div>
