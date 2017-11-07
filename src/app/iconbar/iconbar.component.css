@@ -1,0 +1,11 @@
+a {
+  margin-left: 65px;
+  margin-right: 65px;
+  color: #444;
+  transition: color 200ms ease;
+}
+
+a:hover {
+  color: #777;
+  text-decoration: none;
+}
