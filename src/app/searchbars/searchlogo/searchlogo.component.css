@@ -19,10 +19,10 @@ img {
 
 img.active {
   opacity: 1;
-  /* visibility: visible; */
+  visibility: visible;
 }
 
 img.inactive {
   opacity: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
