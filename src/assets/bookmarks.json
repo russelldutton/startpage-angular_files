@@ -137,27 +137,27 @@
     {
       "name": "Reddit",
       "link": "http://www.reddit.com",
-      "icon": "fa fa-reddit fa-3"
+      "icon": "fa fa-reddit fa-2x"
     },
     {
       "name": "Soundcloud",
       "link": "https://soundcloud.com/stream",
-      "icon": "fa fa-soundcloud fa-3"
+      "icon": "fa fa-soundcloud fa-2x"
     },
     {
       "name": "WhatsApp",
       "link": "https://web.whatsapp.com",
-      "icon": "fa fa-whatsapp fa-3"
+      "icon": "fa fa-whatsapp fa-2x"
     },
     {
       "name": "Gmail",
       "link": "https://mail.google.com/mail/u/0/#inbox",
-      "icon": "fa fa-envelope fa-3"
+      "icon": "fa fa-envelope fa-2x"
     },
     {
       "name": "Github",
       "link": "https://github.com",
-      "icon": "fa fa-github fa-3"
+      "icon": "fa fa-github fa-2x"
     }
   ]
 }
