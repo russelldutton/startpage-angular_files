@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { SearchbarsComponent } from './searchbars/searchbars.component';
 import { SearchlogoComponent } from './searchbars/searchlogo/searchlogo.component';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { IconbarComponent } from './iconbar/iconbar.component';
+
+import { BookmarkService } from './bookmark.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchbarsComponent,
     SearchlogoComponent,
-    BookmarksComponent
+    BookmarksComponent,
+    IconbarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ BookmarkService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
