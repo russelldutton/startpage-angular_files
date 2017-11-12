@@ -17,8 +17,8 @@
           "link": "http://www.reddit.com/r/startpages"
         },
         {
-          "name": "r/archlinux",
-          "link": "http://www.reddit.com/r/archlinux"
+          "name": "r/TalesFromRetail",
+          "link": "http://www.reddit.com/r/talesfromretail"
         },
         {
           "name": "r/Wallpaper",
@@ -27,6 +27,10 @@
         {
           "name": "r/ProgrammerHumour",
           "link": "https://www.reddit.com/r/ProgrammerHumor"
+        },
+        {
+          "name": "Random Subreddit",
+          "link": "https://www.reddit.com/r/random"
         }
       ]
     },
@@ -158,6 +162,11 @@
       "name": "Github",
       "link": "https://github.com",
       "icon": "fa fa-github fa-2x"
+    },
+    {
+      "name": "Trello",
+      "link": "https://trello.com",
+      "icon": "fa fa-trello fa-2x"
     }
   ]
 }
