@@ -1,13 +1,17 @@
-<div class="card-columns">
-  <div class="card" *ngFor="let mark of bookmarks">
-    <div class="card-body">
-      <span>
-        <h5>{{mark.name}}</h5>
-      </span>
-      <hr>
-      <ul class="card-body">
-        <li *ngFor="let item of mark.links"><a [href]="item.link">{{item.name}}</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="parent">
+  <masonry [options]="masonryOptions" class="grid">
+    <masonry-brick class="grid-item" *ngFor="let mark of bookmarks">
+        <div class="card">
+          <div class="card-body">
+            <span>
+              <h5>{{mark.name}}</h5>
+            </span>
+            <hr>
+            <ul class="card-body">
+              <li *ngFor="let item of mark.links"><a [href]="item.link">{{item.name}}</a></li>
+            </ul>
+          </div>
+        </div>
+    </masonry-brick>
+  </masonry>
 </div>

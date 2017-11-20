@@ -1,3 +1,17 @@
+.parent {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 24%;
+  text-align: center;
+}
+
 div.card-body {
   padding: 10px;
 }
@@ -7,6 +21,7 @@ div.card {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
+  margin-bottom: 10px;
 }
 
 div.card:hover {
