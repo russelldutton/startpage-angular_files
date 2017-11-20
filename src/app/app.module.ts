@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { MasonryModule } from 'angular2-masonry';
 
 import { AppComponent } from './app.component';
 import { SearchbarsComponent } from './searchbars/searchbars.component';
@@ -20,7 +21,8 @@ import { BookmarkService } from './bookmark.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    MasonryModule
   ],
   providers: [ BookmarkService ],
   bootstrap: [AppComponent]

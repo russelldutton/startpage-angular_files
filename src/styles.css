@@ -3,8 +3,8 @@
 
 .bg {
   margin-top: 1%;
-  margin-right: 20%;
-  margin-left: 20%;
+  /* margin-right: 5%;
+  margin-left: 5%; */
   background-image: url("./assets/bg_blur.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
