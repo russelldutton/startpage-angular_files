@@ -43,6 +43,7 @@ export class SearchbarsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById("searchG").focus();
   }
 
   onFocus(index: number): void {

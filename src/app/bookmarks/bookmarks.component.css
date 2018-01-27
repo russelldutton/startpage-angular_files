@@ -3,12 +3,14 @@
   margin-right: 10%;
 }
 
-.grid {
+/* .grid {
   margin: 0 auto;
-}
+} */
 
 .grid-item {
-  width: 24%;
+  width: 260px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-align: center;
 }
 

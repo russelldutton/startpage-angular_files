@@ -14,11 +14,8 @@ export class BookmarksComponent implements OnInit {
 
   masonryOptions = {
     itemSelector: '.grid-item',
-    columnwidth: 250,
-    gutter: 10,
     horizontalOrder: true,
-    percentPosition: true,
-    fitWidth: true
+    percentPosition: true
   };
 
   constructor( private bookmark: BookmarkService ) { }
