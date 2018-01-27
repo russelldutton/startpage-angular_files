@@ -1,13 +1,17 @@
-<div class="card-columns">
-  <div class="card" *ngFor="let mark of bookmarks">
-    <div class="card-body">
-      <span>
-        <h5>{{mark.name}}</h5>
-      </span>
-      <hr>
-      <ul class="card-body">
-        <li *ngFor="let item of mark.links"><a [href]="item.link">{{item.name}}</a></li>
-      </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 p-1" *ngFor="let mark of bookmarks">
+      <div class="card">
+        <div class="card-body">
+          <span>
+            <h5>{{mark.name}}</h5>
+          </span>
+          <hr>
+          <ul class="card-body">
+            <li *ngFor="let item of mark.links"><a [href]="item.link">{{item.name}}</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+  </div>      
 </div>

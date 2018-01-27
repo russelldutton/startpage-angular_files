@@ -21,7 +21,7 @@ export class BookmarkService {
   }
 
   private getJSON() {
-    return this.http.get('../assets/bookmarks.json').map( (res:Response) => res.json() );
+    return this.http.get('/assets/bookmarks.json').map( (res:Response) => res.json() );
   }
 
 }

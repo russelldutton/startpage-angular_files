@@ -1,3 +1,9 @@
+div.container {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 div.card-body {
   padding: 10px;
 }
