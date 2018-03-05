@@ -6,6 +6,12 @@
   /* margin-right: 5%;
   margin-left: 5%; */
   background-image: url("./assets/bg_blur.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  height: 100%;  
+  width: 100%;  
+  z-index: -1;  
+  position: absolute;  
+  overflow: hidden;
 }
