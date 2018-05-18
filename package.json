@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "build-local": "ng build --output-hashing=none --base-href=/Startpage/ --prod"
   },
   "private": true,
   "dependencies": {

@@ -10,7 +10,7 @@ div.card-body {
 
 div.card {
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   -webkit-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
   margin-left: 2pt;
@@ -31,11 +31,11 @@ span {
 }
 
 li a {
-  color: #444;
+  color: #222;
 }
 
 ul {
-  color: #444;
+  color: #222;
   list-style: none;
   text-align: center;
   padding-top: 0;
